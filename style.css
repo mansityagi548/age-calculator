@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #F0F0F0;
+    /* this is the bg color the og color */
+    --num-color: #864DFE;
+    /* this is the color for num and the arrow bg */
+    --card-bg: #FFFFFF;
+    --year-color: #151515;
+    /* this is the color for this year one */
+    --light-color: #838383;
+    /* this is the color for the box label*/
+    --error-color: hsl(0, 100%, 67%);
+    --grey-500: hsl(0, 1%, 44%);
+    --light-grey: #dbdbdb;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+       align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 90%;
+    max-width: 35rem;
+    height: auto;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 1rem 1rem 8rem 1rem;
+}
+
+.sr-only {
+    display: none;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 1rem;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.input-group.error label {
+    color: var(--error-color);
+}
+
+.input-group.error input {
+    border-color: var(--error-color);
+}
+
+.error-msg {
+    color: var(--error-color);
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.input-group.error .error-msg {
+    display: block;
+}
+
+.input-group input {
+    height: 3.5rem;
+    width: 7rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    border: 1px solid var(--light-grey);
+    font-weight: 900;
+    padding: 0 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.input-group input:focus {
+    border-color: var(--num-color);
+}
+
+
+
+.input-group label {
+    font-size: 1rem;
+    color: var(--light-color);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+
+form {
+    position: relative;
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+button {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: var(--num-color);
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: -2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--year-color);
+}
+
+
+
+.results p {
+    font-size: 5.3rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.1;
+    color: var(--year-color);
+    margin: 0;
+}
+
+.results .number {
+    color: var(--num-color);
+    letter-spacing: 0.5rem;
+    margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+
+      body {
+        align-items: flex-start; 
+        padding: 2rem 1rem; 
+    }
+
+    main {
+        border-radius: 1rem 1rem 5rem 1rem;
+        padding: 1.5rem 1.2rem;
+    }
+
+    .input-group input {
+        width: 5.5rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .input-group label {
+        font-size: 0.75rem;
+    }
+ 
+    button{
+        right: 50%;
+        transform: translateX(50%);
+        height: 4rem;
+        width: 4rem;
+    }
+    .results p {
+         font-size: 2.5rem; 
+        line-height: 1.3;
+    }
+}
