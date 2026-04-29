@@ -3,10 +3,10 @@ Age Calculator
 A simple age calculator that takes your date of birth and tells you your exact age in years, months, and days.
 
 ## 📸 Preview :
-![Desktop-preview](./preview/desktop-design.jpg);
+![Desktop-preview](./preview/desktop-design.jpg)
 
 ## 🔗 Live Demo
-[View Live](#) 
+[View Live](# https://mansityagi548.github.io/age-calculator/) 
 
 ## 🛠️ Built With:
 
