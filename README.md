@@ -3,28 +3,21 @@ Age Calculator
 A simple age calculator that takes your date of birth and tells you your exact age in years, months, and days.
 
 ## 📸 Preview :
-![Desktop-preview](./preview/preview%20desktop-design.png)
+![Desktop-preview](./preview/preview%20desktop-design.jpg)
 
 ## 🛠️ Built With:
 
 -HTML
-
 -CSS
-
 -JavaScript
-
 -Day.js — for date parsing and calculation
 
 ## ✨ Features
 
 -Validates empty fields
-
 -Validates day, month, and year ranges
-
 -Handles month-aware day validation (e.g. Feb 30 is invalid)
-
 -Handles leap years
-
 -Fully responsive
 
 What I Learned:
